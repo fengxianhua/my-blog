@@ -1,0 +1,10 @@
+2019-12-12 21:11:04,508 INFO 95603 [egg-logrotator] app logger reload: got log-reload message
+2019-12-12 21:25:48,172 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-12 21:25:48,173 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 22:04:55,378 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 22:55:22,403 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-12 22:55:22,403 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 23:49:30,557 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-13 01:35:04,992 INFO 95603 [egg-logrotator] clean all log before 31 days
+2019-12-13 01:35:05,964 INFO 95603 [egg-logrotator] broadcast log-reload
+2019-12-13 01:35:05,964 INFO 95603 [egg-logrotator] rotate files success by DayRotator, files ["/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/common-error.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/common-error.log.2019-12-12","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/my-blog-web.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/my-blog-web.log.2019-12-12","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-web.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-web.log.2019-12-12","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-schedule.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-schedule.log.2019-12-12","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-agent.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-agent.log.2019-12-12"]

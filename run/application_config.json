@@ -1,0 +1,991 @@
+{
+  "config": {
+    "session": {
+      "maxAge": 86400000,
+      "key": "EGG_SESS",
+      "httpOnly": true,
+      "encrypt": true,
+      "overwrite": true,
+      "signed": true,
+      "autoCommit": true,
+      "encode": "<Function encode>",
+      "decode": "<Function decode>",
+      "genid": "<Function v4>"
+    },
+    "security": {
+      "domainWhiteList": [
+        "http://localhost:9000",
+        "http://127.0.0.1:9000",
+        "http://192.168.18.7:9000",
+        "http://localhost:9001",
+        "http://127.0.0.1:9001",
+        "http://192.168.18.7:9001",
+        "http://localhost:9002",
+        "http://127.0.0.1:9002",
+        "http://192.168.18.7:9002"
+      ],
+      "protocolWhiteList": [],
+      "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
+      "csrf": {
+        "enable": true,
+        "type": "ctoken",
+        "ignoreJSON": false,
+        "useSession": false,
+        "cookieName": "csrfToken",
+        "sessionName": "csrfToken",
+        "headerName": "x-csrf-token",
+        "bodyName": "_csrf",
+        "queryName": "_csrf",
+        "refererWhiteList": [],
+        "matching": "<Function anonymous>"
+      },
+      "xframe": {
+        "enable": true,
+        "value": "SAMEORIGIN",
+        "matching": "<Function anonymous>"
+      },
+      "hsts": {
+        "enable": false,
+        "maxAge": 31536000,
+        "includeSubdomains": false
+      },
+      "dta": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "methodnoallow": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "noopen": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "nosniff": {
+        "enable": true,
+        "matching": "<Function anonymous>"
+      },
+      "referrerPolicy": {
+        "enable": false,
+        "value": "no-referrer-when-downgrade"
+      },
+      "xssProtection": {
+        "enable": true,
+        "value": "1; mode=block",
+        "matching": "<Function anonymous>"
+      },
+      "csp": {
+        "enable": false,
+        "policy": {}
+      },
+      "ssrf": {
+        "ipBlackList": null,
+        "checkAddress": null
+      },
+      "_protocolWhiteListSet": "<Set>"
+    },
+    "helper": {
+      "shtml": {}
+    },
+    "jsonp": {
+      "limit": 50,
+      "callback": [
+        "_callback",
+        "callback"
+      ],
+      "csrf": false
+    },
+    "onerror": {
+      "errorPageUrl": "",
+      "appErrorFilter": null,
+      "templatePath": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-onerror@2.1.0@egg-onerror/lib/onerror_page.mustache"
+    },
+    "i18n": {
+      "defaultLocale": "en_US",
+      "dirs": [
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-session@3.1.0@egg-session/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-security@2.7.1@egg-security/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-jsonp@2.0.0@egg-jsonp/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-onerror@2.1.0@egg-onerror/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-i18n@2.1.1@egg-i18n/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-watcher@3.1.0@egg-watcher/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-schedule@3.6.4@egg-schedule/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-multipart@2.9.1@egg-multipart/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-development@2.4.3@egg-development/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-logrotator@3.1.0@egg-logrotator/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-static@2.2.0@egg-static/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-view@2.1.2@egg-view/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-view-nunjucks@2.2.0@egg-view-nunjucks/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-cors@2.2.3@egg-cors/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-webpack@4.5.2@egg-webpack/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/locales",
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config/locales"
+      ],
+      "queryField": "locale",
+      "cookieField": "locale",
+      "cookieDomain": "",
+      "cookieMaxAge": "1y",
+      "functionName": "__"
+    },
+    "watcher": {
+      "type": "development",
+      "eventSources": {
+        "default": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/default",
+        "development": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-watcher@3.1.0@egg-watcher/lib/event-sources/development"
+      }
+    },
+    "customLogger": {
+      "scheduleLogger": {
+        "consoleLevel": "NONE",
+        "file": "egg-schedule.log"
+      }
+    },
+    "schedule": {
+      "directory": []
+    },
+    "multipart": {
+      "mode": "stream",
+      "autoFields": false,
+      "defaultCharset": "utf8",
+      "fieldNameSize": 100,
+      "fieldSize": 102400,
+      "fields": 10,
+      "fileSize": 10485760,
+      "files": 10,
+      "fileExtensions": [],
+      "whitelist": null,
+      "tmpdir": "/var/folders/6_/xxvj0d4n4tq21yy8f4rt31cc0000gn/T/egg-multipart-tmp/my-blog",
+      "cleanSchedule": {
+        "cron": "0 30 4 * * *"
+      }
+    },
+    "development": {
+      "watchDirs": [
+        "build"
+      ],
+      "ignoreDirs": [
+        "app/web",
+        "public",
+        "config"
+      ],
+      "fastReady": false,
+      "reloadOnDebug": true,
+      "overrideDefault": false
+    },
+    "logrotator": {
+      "filesRotateByHour": null,
+      "hourDelimiter": "-",
+      "filesRotateBySize": null,
+      "maxFileSize": 52428800,
+      "maxFiles": 10,
+      "rotateDuration": 60000,
+      "maxDays": 31
+    },
+    "static": {
+      "prefix": "/public/",
+      "dir": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public",
+      "dynamic": true,
+      "preload": false,
+      "buffer": false,
+      "maxFiles": 1000,
+      "maxAge": 0
+    },
+    "view": {
+      "root": [
+        "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view"
+      ],
+      "cache": false,
+      "defaultExtension": ".html",
+      "defaultViewEngine": "nunjucks",
+      "mapping": {
+        ".tpl": "nunjucks"
+      }
+    },
+    "nunjucks": {
+      "autoescape": true,
+      "throwOnUndefined": false,
+      "trimBlocks": false,
+      "lstripBlocks": false,
+      "cache": false
+    },
+    "cors": {
+      "origin": "<Function corsOrigin>"
+    },
+    "webpack": {
+      "port": 9000,
+      "proxy": {
+        "host": "http://127.0.0.1:9000",
+        "match": "/^\\/public\\//"
+      },
+      "webpackConfigList": {
+        "context": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog",
+        "entry": {
+          "app": [
+            "react-hot-loader/patch",
+            "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_webpack-hot-middleware@2.25.0@webpack-hot-middleware/client?path=http://192.168.18.7:9000/__webpack_hmr&noInfo=false&reload=false&quiet=false",
+            "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_@easy-team_easywebpack@4.2.3@@easy-team/easywebpack/utils/hot.js",
+            "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/page/app/app.js"
+          ]
+        },
+        "output": {
+          "filename": "js/[name].js",
+          "chunkFilename": "js/chunk/[name].js",
+          "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public",
+          "publicPath": "/public/"
+        },
+        "resolve": {
+          "extensions": [
+            ".jsx",
+            ".js"
+          ],
+          "alias": {
+            "react-dom": "@hot-loader/react-dom"
+          }
+        },
+        "externals": [],
+        "resolveLoader": {
+          "modules": [
+            "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules",
+            "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_@easy-team_easywebpack@4.2.3@@easy-team/easywebpack/lib/node_modules",
+            "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_@easy-team_easywebpack-react@4.1.1@@easy-team/easywebpack-react/node_modules"
+          ]
+        },
+        "mode": "development",
+        "devtool": "eval",
+        "target": "web",
+        "node": {
+          "console": true,
+          "Buffer": false,
+          "setImmediate": false
+        },
+        "module": {
+          "rules": [
+            {
+              "test": {},
+              "exclude": {},
+              "use": [
+                {
+                  "loader": "thread-loader",
+                  "options": {}
+                },
+                {
+                  "loader": "babel-loader",
+                  "options": {
+                    "cacheDirectory": "/var/folders/6_/xxvj0d4n4tq21yy8f4rt31cc0000gn/T/easywebpack/my-blog/dev/cache/client/babel-loader"
+                  }
+                }
+              ]
+            },
+            {
+              "test": {},
+              "use": [
+                "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_mini-css-extract-plugin@0.8.0@mini-css-extract-plugin/dist/loader.js",
+                {
+                  "options": {
+                    "sourceMap": true
+                  },
+                  "loader": "css-loader"
+                },
+                {
+                  "loader": "postcss-loader",
+                  "options": {
+                    "sourceMap": true
+                  }
+                }
+              ],
+              "exclude": [
+                {}
+              ]
+            },
+            {
+              "test": {},
+              "use": [
+                "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_mini-css-extract-plugin@0.8.0@mini-css-extract-plugin/dist/loader.js",
+                {
+                  "options": {
+                    "sourceMap": true
+                  },
+                  "loader": "css-loader"
+                },
+                {
+                  "loader": "postcss-loader",
+                  "options": {
+                    "sourceMap": true
+                  }
+                },
+                {
+                  "options": {
+                    "sourceMap": true
+                  },
+                  "loader": "less-loader"
+                }
+              ],
+              "exclude": [
+                {}
+              ]
+            },
+            {
+              "test": {},
+              "use": [
+                {
+                  "loader": "url-loader",
+                  "options": {
+                    "limit": 1024,
+                    "name": "img/[name].[ext]"
+                  }
+                }
+              ]
+            },
+            {
+              "test": {},
+              "use": [
+                {
+                  "loader": "url-loader",
+                  "options": {
+                    "limit": 1024,
+                    "name": "media/[name].[ext]"
+                  }
+                }
+              ]
+            },
+            {
+              "test": {},
+              "use": [
+                {
+                  "loader": "url-loader",
+                  "options": {
+                    "limit": 1024,
+                    "name": "font/[name].[ext]"
+                  }
+                }
+              ]
+            },
+            {
+              "test": "~config~webpack~webpackConfigList~module~rules~1~exclude~0",
+              "use": [
+                "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_mini-css-extract-plugin@0.8.0@mini-css-extract-plugin/dist/loader.js",
+                {
+                  "options": {
+                    "sourceMap": true,
+                    "modules": true,
+                    "importLoaders": 1
+                  },
+                  "loader": "css-loader"
+                },
+                {
+                  "loader": "postcss-loader",
+                  "options": {
+                    "sourceMap": true
+                  }
+                }
+              ],
+              "include": [
+                "~config~webpack~webpackConfigList~module~rules~1~exclude~0"
+              ]
+            },
+            {
+              "test": "~config~webpack~webpackConfigList~module~rules~2~exclude~0",
+              "use": [
+                "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_mini-css-extract-plugin@0.8.0@mini-css-extract-plugin/dist/loader.js",
+                {
+                  "options": {
+                    "sourceMap": true,
+                    "modules": true,
+                    "importLoaders": 2
+                  },
+                  "loader": "css-loader"
+                },
+                {
+                  "loader": "postcss-loader",
+                  "options": {
+                    "sourceMap": true
+                  }
+                },
+                {
+                  "options": {
+                    "sourceMap": true
+                  },
+                  "loader": "less-loader"
+                }
+              ],
+              "include": [
+                "~config~webpack~webpackConfigList~module~rules~2~exclude~0"
+              ]
+            }
+          ]
+        },
+        "plugins": [
+          {
+            "options": {},
+            "fullBuildTimeout": 200,
+            "requestTimeout": 10000,
+            "__plugin__": "HotModuleReplacementPlugin",
+            "__lable__": "hot"
+          },
+          {
+            "definitions": {},
+            "__plugin__": "ProvidePlugin",
+            "__lable__": "provide"
+          },
+          {
+            "definitions": {
+              "process.env.NODE_ENV": "\"development\"",
+              "EASY_ENV": "\"dev\"",
+              "EASY_ENV_IS_DEV": true,
+              "EASY_ENV_IS_TEST": false,
+              "EASY_ENV_IS_PROD": false,
+              "EASY_ENV_IS_BROWSER": true,
+              "EASY_ENV_IS_NODE": false,
+              "EASY_ENV_LOCAL_PUBLIC_PATH": "\"/\"",
+              "EASY_ENV_PUBLIC_PATH": "\"/public/\"",
+              "EASY_ENV_HOST_URL": "\"http://192.168.18.7:9000\""
+            },
+            "__plugin__": "DefinePlugin",
+            "__lable__": "define"
+          },
+          {
+            "opts": {
+              "basePath": "",
+              "absPath": "",
+              "fileName": "../app/public/manifest.json",
+              "commonsChunk": [
+                "runtime",
+                "default",
+                "common"
+              ],
+              "transformExtensions": {},
+              "asset": true,
+              "writeToFileEmit": true,
+              "seed": null,
+              "filter": null,
+              "map": null,
+              "generate": null,
+              "sort": null,
+              "baseDir": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog",
+              "host": "http://192.168.18.7:9000",
+              "proxy": true,
+              "buildPath": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public",
+              "publicPath": "/public/",
+              "localPublicPath": "/",
+              "assets": false,
+              "filepath": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public/manifest.json"
+            },
+            "isRunned": false,
+            "__plugin__": "webpack-manifest-resource-plugin",
+            "__lable__": "manifest"
+          },
+          {
+            "profile": false,
+            "modulesCount": 500,
+            "showEntries": false,
+            "showModules": true,
+            "showActiveModules": true,
+            "__plugin__": "progress-bar-webpack-plugin",
+            "__lable__": "progress"
+          },
+          {
+            "options": {
+              "filename": "css/[name].css",
+              "ignoreOrder": false,
+              "chunkFilename": "css/[id].css",
+              "env": [
+                "dev",
+                "test",
+                "prod"
+              ]
+            },
+            "__plugin__": "mini-css-extract-plugin",
+            "__lable__": "extract"
+          },
+          {
+            "options": {},
+            "pathCache": {},
+            "fsOperations": 0,
+            "primed": false,
+            "__plugin__": "case-sensitive-paths-webpack-plugin",
+            "__lable__": "case"
+          },
+          {
+            "__plugin__": "write-file-webpack-plugin",
+            "__lable__": "write"
+          },
+          {
+            "exclude": [
+              {}
+            ],
+            "__plugin__": "webpack-filter-warnings-plugin",
+            "__lable__": "filter"
+          },
+          {
+            "options": {
+              "template": "./app/web/view/layout.tpl",
+              "filename": "../view/app.tpl",
+              "hash": false,
+              "inject": true,
+              "compile": true,
+              "favicon": false,
+              "minify": false,
+              "cache": true,
+              "showErrors": true,
+              "chunks": [
+                "runtime",
+                "common",
+                "app"
+              ],
+              "excludeChunks": [],
+              "chunksSortMode": "auto",
+              "meta": {},
+              "title": "Webpack App",
+              "xhtml": false
+            },
+            "label": "HtmlWebpackPlugin24",
+            "__plugin__": "HtmlWebpackPlugin",
+            "__lable__": "HtmlWebpackPlugin24"
+          },
+          {
+            "options": {
+              "template": "./app/web/view/layout.tpl",
+              "filename": "../view/test.tpl",
+              "hash": false,
+              "inject": true,
+              "compile": true,
+              "favicon": false,
+              "minify": false,
+              "cache": true,
+              "showErrors": true,
+              "chunks": [
+                "runtime",
+                "common",
+                "test"
+              ],
+              "excludeChunks": [],
+              "chunksSortMode": "auto",
+              "meta": {},
+              "title": "Webpack App",
+              "xhtml": false
+            },
+            "label": "HtmlWebpackPlugin25",
+            "__plugin__": "HtmlWebpackPlugin",
+            "__lable__": "HtmlWebpackPlugin25"
+          }
+        ],
+        "optimization": {
+          "namedModules": true,
+          "namedChunks": true,
+          "runtimeChunk": {
+            "name": "runtime"
+          },
+          "splitChunks": {
+            "name": false,
+            "chunks": "all",
+            "minSize": 10000,
+            "minChunks": 1,
+            "cacheGroups": {
+              "default": false,
+              "vendors": {
+                "name": "common",
+                "chunks": "all",
+                "minChunks": 1,
+                "test": "<Function test>"
+              },
+              "styles": {
+                "name": "common",
+                "chunks": "all",
+                "minChunks": 1,
+                "test": "/\\.(css|less|scss|stylus)$/",
+                "enforce": true,
+                "priority": 50
+              }
+            }
+          }
+        }
+      }
+    },
+    "env": "local",
+    "name": "my-blog",
+    "keys": "<String len: 6>",
+    "proxy": false,
+    "maxIpsCount": 0,
+    "maxProxyCount": 0,
+    "protocolHeaders": "x-forwarded-proto",
+    "ipHeaders": "x-forwarded-for",
+    "hostHeaders": "",
+    "pkg": {
+      "name": "my-blog",
+      "version": "1.0.0",
+      "description": "基于 easywebpack-react 和 egg-view-nunjucks 前端渲染工程骨架项目",
+      "scripts": {
+        "clean": "easy clean",
+        "build": "easy build",
+        "dev": "egg-bin dev",
+        "debug": "egg-bin debug",
+        "start": "egg-scripts start",
+        "lint": "eslint .",
+        "fix": "eslint --fix .",
+        "ii": "npm install --registry https://registry.npm.taobao.org",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+      },
+      "dependencies": {
+        "antd": "^3.0.3",
+        "cross-env": "^5.0.0",
+        "egg": "^2.1.0",
+        "egg-cors": "^2.0.0",
+        "egg-logger": "^1.5.0",
+        "egg-validate": "^1.0.0",
+        "egg-view-nunjucks": "^2.0.0",
+        "extend": "\\x7e3.0.0",
+        "history": "^4.7.2",
+        "lodash": "^4.17.4",
+        "mockjs": "^1.0.1-beta3",
+        "moment": "^2.17.1",
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0",
+        "react-router": "^4.2.0",
+        "react-router-config": "^1.0.0-beta.4",
+        "react-redux": "^5.0.6",
+        "react-router-dom": "^4.2.2",
+        "react-router-redux": "^4.0.8",
+        "redux": "^3.7.2"
+      },
+      "devDependencies": {
+        "@easy-team/easywebpack-cli": "^4.0.0",
+        "@easy-team/easywebpack-react": "^4.0.0",
+        "egg-bin": "^4.9.0",
+        "egg-scripts": "^2.10.0",
+        "egg-webpack": "^4.4.8",
+        "egg-webpack-react": "^2.0.0",
+        "eslint-config-egg": "^5.1.1",
+        "eslint-plugin-react": "^7.1.0",
+        "imagemin-webpack-plugin": "^2.0.0",
+        "ip": "^1.1.5",
+        "less": "^2.7.2",
+        "less-loader": "^4.0.0"
+      },
+      "engines": {
+        "node": ">=8.0.0"
+      },
+      "ci": {
+        "version": "8, 10"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hubcarl/egg-react-webpack-boilerplate.git"
+      },
+      "author": "hubcarl@126.com",
+      "license": "MIT",
+      "homepage": "https://github.com/hubcarl/egg-react-webpack-boilerplate",
+      "webpack": {
+        "loaders": {
+          "less": true
+        }
+      }
+    },
+    "baseDir": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog",
+    "HOME": "/Users/zhubinbin",
+    "rundir": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/run",
+    "dump": {
+      "ignore": "<Set>"
+    },
+    "confusedConfigurations": {
+      "bodyparser": "bodyParser",
+      "notFound": "notfound",
+      "sitefile": "siteFile",
+      "middlewares": "middleware",
+      "httpClient": "httpclient"
+    },
+    "notfound": {
+      "pageUrl": ""
+    },
+    "siteFile": {
+      "/favicon.ico": "<Buffer len: 6463>"
+    },
+    "bodyParser": {
+      "enable": true,
+      "encoding": "utf8",
+      "formLimit": "1mb",
+      "jsonLimit": "1mb",
+      "textLimit": "1mb",
+      "strict": true,
+      "queryString": {
+        "arrayLimit": 100,
+        "depth": 5,
+        "parameterLimit": 1000
+      },
+      "returnRawBody": true
+    },
+    "logger": {
+      "dir": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs",
+      "encoding": "utf8",
+      "env": "local",
+      "level": "INFO",
+      "consoleLevel": "DEBUG",
+      "disableConsoleAfterReady": false,
+      "outputJSON": false,
+      "buffer": true,
+      "appLogName": "my-blog-web.log",
+      "coreLogName": "egg-web.log",
+      "agentLogName": "egg-agent.log",
+      "errorLogName": "common-error.log",
+      "coreLogger": {
+        "consoleLevel": "WARN"
+      },
+      "allowDebugAtProd": false,
+      "type": "application"
+    },
+    "httpclient": {
+      "enableDNSCache": false,
+      "dnsCacheLookupInterval": 10000,
+      "dnsCacheMaxLength": 1000,
+      "request": {
+        "timeout": 5000
+      },
+      "httpAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      },
+      "httpsAgent": {
+        "keepAlive": true,
+        "freeSocketTimeout": 4000,
+        "maxSockets": 9007199254740991,
+        "maxFreeSockets": 256
+      }
+    },
+    "meta": {
+      "enable": true,
+      "logging": false
+    },
+    "coreMiddleware": [
+      "cors",
+      "meta",
+      "siteFile",
+      "notfound",
+      "static",
+      "bodyParser",
+      "overrideMethod",
+      "session",
+      "securities",
+      "i18n",
+      "eggLoaderTrace"
+    ],
+    "workerStartTimeout": 600000,
+    "serverTimeout": null,
+    "cluster": {
+      "listen": {
+        "path": "",
+        "port": 7001,
+        "hostname": ""
+      }
+    },
+    "clusterClient": {
+      "maxWaitTime": 60000,
+      "responseTimeout": 60000
+    },
+    "onClientError": null,
+    "middleware": [
+      "access"
+    ],
+    "coreMiddlewares": "~config~coreMiddleware",
+    "appMiddlewares": "~config~middleware",
+    "appMiddleware": "~config~middleware",
+    "multipartParseOptions": {
+      "autoFields": false,
+      "defCharset": "utf8",
+      "limits": {
+        "fieldNameSize": 100,
+        "fieldSize": 102400,
+        "fields": 10,
+        "fileSize": 10485760,
+        "files": 10
+      },
+      "checkFile": "<Function checkFile>"
+    }
+  },
+  "plugins": {
+    "session": {
+      "enable": true,
+      "package": "egg-session",
+      "name": "session",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-session@3.1.0@egg-session",
+      "version": "3.1.0"
+    },
+    "security": {
+      "enable": true,
+      "package": "egg-security",
+      "name": "security",
+      "dependencies": [],
+      "optionalDependencies": [
+        "session"
+      ],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-security@2.7.1@egg-security",
+      "version": "2.7.1"
+    },
+    "jsonp": {
+      "enable": true,
+      "package": "egg-jsonp",
+      "name": "jsonp",
+      "dependencies": [],
+      "optionalDependencies": [
+        "security"
+      ],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-jsonp@2.0.0@egg-jsonp",
+      "version": "2.0.0"
+    },
+    "onerror": {
+      "enable": true,
+      "package": "egg-onerror",
+      "name": "onerror",
+      "dependencies": [],
+      "optionalDependencies": [
+        "jsonp"
+      ],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-onerror@2.1.0@egg-onerror",
+      "version": "2.1.0"
+    },
+    "i18n": {
+      "enable": true,
+      "package": "egg-i18n",
+      "name": "i18n",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-i18n@2.1.1@egg-i18n",
+      "version": "2.1.1"
+    },
+    "watcher": {
+      "enable": true,
+      "package": "egg-watcher",
+      "name": "watcher",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-watcher@3.1.0@egg-watcher",
+      "version": "3.1.0"
+    },
+    "schedule": {
+      "enable": true,
+      "package": "egg-schedule",
+      "name": "schedule",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-schedule@3.6.4@egg-schedule",
+      "version": "3.6.4"
+    },
+    "multipart": {
+      "enable": true,
+      "package": "egg-multipart",
+      "name": "multipart",
+      "dependencies": [],
+      "optionalDependencies": [
+        "schedule"
+      ],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-multipart@2.9.1@egg-multipart",
+      "version": "2.9.1"
+    },
+    "development": {
+      "enable": true,
+      "package": "egg-development",
+      "name": "development",
+      "dependencies": [
+        "watcher"
+      ],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-development@2.4.3@egg-development",
+      "version": "2.4.3"
+    },
+    "logrotator": {
+      "enable": true,
+      "package": "egg-logrotator",
+      "name": "logrotator",
+      "dependencies": [
+        "schedule"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-logrotator@3.1.0@egg-logrotator",
+      "version": "3.1.0"
+    },
+    "static": {
+      "enable": true,
+      "package": "egg-static",
+      "name": "static",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-static@2.2.0@egg-static",
+      "version": "2.2.0"
+    },
+    "view": {
+      "enable": true,
+      "package": "egg-view",
+      "name": "view",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg@2.25.0@egg/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-view@2.1.2@egg-view",
+      "version": "2.1.2"
+    },
+    "nunjucks": {
+      "enable": true,
+      "package": "egg-view-nunjucks",
+      "name": "nunjucks",
+      "dependencies": [
+        "security",
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config/plugin.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-view-nunjucks@2.2.0@egg-view-nunjucks",
+      "version": "2.2.0"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config/plugin.local.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-cors@2.2.3@egg-cors",
+      "version": "2.2.3"
+    },
+    "webpack": {
+      "enable": true,
+      "package": "egg-webpack",
+      "name": "webpack",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config/plugin.local.js",
+      "path": "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_egg-webpack@4.5.2@egg-webpack",
+      "version": "4.5.2"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+2019-12-05 22:13:05,744 INFO 95399 [-/192.168.18.7/-/40ms GET /] [access] 192.168.18.7: - GET / HTTP/200 756 - 29 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+2019-12-05 22:18:23,347 INFO 95603 [-/192.168.18.7/-/39ms GET /] [access] 192.168.18.7: - GET / HTTP/200 633 - 25 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+2019-12-10 21:37:44,478 INFO 95603 [-/192.168.18.7/-/65ms GET /] [access] 192.168.18.7: - GET / HTTP/200 633 - 40 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36
+2019-12-10 21:46:16,320 INFO 95603 [-/192.168.18.7/-/3ms GET /] [access] 192.168.18.7: - GET / HTTP/200 590 - 2 - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36

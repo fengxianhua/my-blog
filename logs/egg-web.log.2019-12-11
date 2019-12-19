@@ -1,0 +1,100 @@
+2019-12-05 22:13:02,478 INFO 95399 [egg:logger] init all loggers with options: {"dir":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"my-blog-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-12-05 22:13:02,508 INFO 95399 [egg-multipart] stream mode enable
+2019-12-05 22:13:02,539 INFO 95399 [egg-static] starting static serve /public/ -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public
+2019-12-05 22:13:02,541 INFO 95399 [egg-security] use csrf middleware
+2019-12-05 22:13:02,542 INFO 95399 [egg-security] use methodnoallow middleware
+2019-12-05 22:13:02,542 INFO 95399 [egg-security] use noopen middleware
+2019-12-05 22:13:02,542 INFO 95399 [egg-security] use nosniff middleware
+2019-12-05 22:13:02,543 INFO 95399 [egg-security] use xssProtection middleware
+2019-12-05 22:13:02,544 INFO 95399 [egg-security] use xframe middleware
+2019-12-05 22:13:02,544 INFO 95399 [egg-security] use dta middleware
+2019-12-05 22:13:02,544 INFO 95399 [egg-security] compose 7 middlewares into one security middleware
+2019-12-05 22:13:02,551 INFO 95399 [egg:core] dump config after load, 5ms
+2019-12-05 22:13:02,562 INFO 95399 [egg-watcher:application] watcher start success
+2019-12-05 22:13:02,570 INFO 95399 [egg:core] dump config after ready, 6ms
+2019-12-05 22:13:05,718 INFO 95399 [egg-view-nunjucks] loading templates from ["/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view"]
+2019-12-05 22:18:21,671 INFO 95603 [egg:logger] init all loggers with options: {"dir":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"my-blog-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-12-05 22:18:21,703 INFO 95603 [egg-multipart] stream mode enable
+2019-12-05 22:18:21,736 INFO 95603 [egg-static] starting static serve /public/ -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public
+2019-12-05 22:18:21,738 INFO 95603 [egg-security] use csrf middleware
+2019-12-05 22:18:21,739 INFO 95603 [egg-security] use methodnoallow middleware
+2019-12-05 22:18:21,739 INFO 95603 [egg-security] use noopen middleware
+2019-12-05 22:18:21,740 INFO 95603 [egg-security] use nosniff middleware
+2019-12-05 22:18:21,741 INFO 95603 [egg-security] use xssProtection middleware
+2019-12-05 22:18:21,741 INFO 95603 [egg-security] use xframe middleware
+2019-12-05 22:18:21,742 INFO 95603 [egg-security] use dta middleware
+2019-12-05 22:18:21,742 INFO 95603 [egg-security] compose 7 middlewares into one security middleware
+2019-12-05 22:18:21,752 INFO 95603 [egg:core] dump config after load, 6ms
+2019-12-05 22:18:21,766 INFO 95603 [egg-watcher:application] watcher start success
+2019-12-05 22:18:21,777 INFO 95603 [egg:core] dump config after ready, 9ms
+2019-12-05 22:18:23,325 INFO 95603 [egg-view-nunjucks] loading templates from ["/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view"]
+2019-12-05 22:44:04,107 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-05 22:48:13,796 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-05 22:51:23,237 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-05 23:06:43,638 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-05 23:06:43,638 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-06 00:38:09,969 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-06 00:38:09,979 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-06 02:26:16,714 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-06 02:26:16,725 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-06 04:14:22,448 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-06 04:14:22,467 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-06 06:02:29,820 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-06 07:50:37,513 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-06 09:38:44,028 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-06 10:52:21,850 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-06 20:16:45,725 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-06 20:16:45,765 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-09 21:53:37,747 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-09 22:07:58,156 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-09 22:09:42,925 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-09 22:09:42,925 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-09 23:44:51,704 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-09 23:44:51,710 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-10 01:32:58,802 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-10 01:32:58,814 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-10 03:21:04,832 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-10 05:09:12,387 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-10 06:57:18,751 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-10 08:45:25,268 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-10 10:10:41,132 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-10 21:37:29,131 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-10 23:28:39,550 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-10 23:28:39,569 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 01:16:46,698 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 03:04:53,308 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 04:53:01,364 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 06:41:08,639 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 08:29:19,625 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-11 08:29:19,645 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 09:51:07,368 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 20:47:00,852 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 21:27:31,750 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 21:33:31,281 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 21:37:50,239 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 21:41:47,989 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-11 21:41:47,989 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 21:46:05,792 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 21:50:24,796 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-11 21:50:24,797 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 21:54:22,134 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 22:02:57,991 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 22:07:22,184 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 22:09:44,151 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 22:14:05,607 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 22:16:51,323 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-11 22:16:51,324 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-11 23:42:31,470 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-11 23:42:31,479 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 01:30:40,663 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 03:18:48,416 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 05:06:55,626 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 06:55:05,914 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 08:43:15,230 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 10:18:01,511 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 20:45:38,308 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 21:06:45,166 WARN 95603 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-12-12 21:06:45,166 WARN 95603 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-12-12 21:11:03,611 INFO 95603 [egg-logrotator] clean all log before 31 days
+2019-12-12 21:11:04,505 INFO 95603 [egg-logrotator] broadcast log-reload
+2019-12-12 21:11:04,505 INFO 95603 [egg-logrotator] rotate files success by DayRotator, files ["/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/common-error.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/common-error.log.2019-12-11","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/my-blog-web.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/my-blog-web.log.2019-12-11","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-web.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-web.log.2019-12-11","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-schedule.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-schedule.log.2019-12-11","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-agent.log -> /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs/egg-agent.log.2019-12-11"]

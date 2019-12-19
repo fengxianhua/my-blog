@@ -1,0 +1,476 @@
+2019-12-05 22:13:00,705 INFO 95391 [egg:logger] init all loggers with options: {"dir":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"my-blog-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-12-05 22:13:00,715 INFO 95391 [egg:core] dump config after load, 5ms
+2019-12-05 22:13:00,749 INFO 95391 [egg-watcher] Start watching: ["/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/mocks","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/mocks_proxy","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app.js","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/build"]
+2019-12-05 22:13:00,749 INFO 95391 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app"
+2019-12-05 22:13:00,750 INFO 95391 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config"
+2019-12-05 22:13:00,750 INFO 95391 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/mocks"
+2019-12-05 22:13:00,750 INFO 95391 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/mocks_proxy"
+2019-12-05 22:13:00,750 INFO 95391 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app.js"
+2019-12-05 22:13:00,750 INFO 95391 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/build"
+2019-12-05 22:13:00,751 INFO 95391 [egg-watcher:agent] watcher start success
+2019-12-05 22:13:00,764 INFO 95391 [egg:core] dump config after ready, 7ms
+2019-12-05 22:13:05,651 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public/manifest.json","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544082,"size":739,"blocks":8,"atimeMs":1575555111601.8152,"mtimeMs":1575555185374.3167,"ctimeMs":1575555185374.3167,"birthtimeMs":1575555111601.8152,"atime":"2019-12-05T14:11:51.602Z","mtime":"2019-12-05T14:13:05.374Z","ctime":"2019-12-05T14:13:05.374Z","birthtime":"2019-12-05T14:11:51.602Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:13:05,812 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/app.tpl.342674643","remove":true,"isDirectory":false,"isFile":false}
+2019-12-05 22:13:05,812 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/app.tpl","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300604450,"size":773,"blocks":8,"atimeMs":1575555185809.43,"mtimeMs":1575555185504.0444,"ctimeMs":1575555185517.788,"birthtimeMs":1575555185503.9355,"atime":"2019-12-05T14:13:05.809Z","mtime":"2019-12-05T14:13:05.504Z","ctime":"2019-12-05T14:13:05.518Z","birthtime":"2019-12-05T14:13:05.504Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:13:05,813 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/test.tpl.1891136485","remove":true,"isDirectory":false,"isFile":false}
+2019-12-05 22:13:05,814 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/test.tpl","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300604451,"size":774,"blocks":8,"atimeMs":1575555185520.0664,"mtimeMs":1575555185520.1685,"ctimeMs":1575555185528.8286,"birthtimeMs":1575555185520.0664,"atime":"2019-12-05T14:13:05.520Z","mtime":"2019-12-05T14:13:05.520Z","ctime":"2019-12-05T14:13:05.529Z","birthtime":"2019-12-05T14:13:05.520Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:13:20,653 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/mocks","remove":true,"isDirectory":true,"isFile":false}
+2019-12-05 22:13:31,848 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/test.tpl","remove":true,"isDirectory":false,"isFile":false}
+2019-12-05 22:13:38,168 WARN 95391 [agent:development] reload worker because /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/controller/app.js change
+2019-12-05 22:13:37,917 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/controller/app.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544065,"size":196,"blocks":8,"atimeMs":1575555217906.2148,"mtimeMs":1575555217907.2158,"ctimeMs":1575555217907.2158,"birthtimeMs":1575555111594.1743,"atime":"2019-12-05T14:13:37.906Z","mtime":"2019-12-05T14:13:37.907Z","ctime":"2019-12-05T14:13:37.907Z","birthtime":"2019-12-05T14:11:51.594Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:13:37,967 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/controller/app.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544065,"size":196,"blocks":8,"atimeMs":1575555217906.2148,"mtimeMs":1575555217907.2158,"ctimeMs":1575555217907.2158,"birthtimeMs":1575555111594.1743,"atime":"2019-12-05T14:13:37.906Z","mtime":"2019-12-05T14:13:37.907Z","ctime":"2019-12-05T14:13:37.907Z","birthtime":"2019-12-05T14:11:51.594Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:13:47,782 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/page/test","remove":true,"isDirectory":true,"isFile":false}
+2019-12-05 22:14:02,099 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/asset/css","remove":true,"isDirectory":true,"isFile":false}
+2019-12-05 22:14:02,101 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/asset/images","remove":true,"isDirectory":true,"isFile":false}
+2019-12-05 22:14:07,415 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/asset/logo.png","remove":true,"isDirectory":false,"isFile":false}
+2019-12-05 22:14:17,447 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/component/header","remove":true,"isDirectory":true,"isFile":false}
+2019-12-05 22:14:31,269 WARN 95391 [agent:development] reload worker because /Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/router.js change
+2019-12-05 22:14:31,018 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/router.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544083,"size":72,"blocks":8,"atimeMs":1575555271007.172,"mtimeMs":1575555271007.733,"ctimeMs":1575555271007.733,"birthtimeMs":1575555111602.5095,"atime":"2019-12-05T14:14:31.007Z","mtime":"2019-12-05T14:14:31.008Z","ctime":"2019-12-05T14:14:31.008Z","birthtime":"2019-12-05T14:11:51.603Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:14:31,068 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/router.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544083,"size":72,"blocks":8,"atimeMs":1575555271007.172,"mtimeMs":1575555271007.733,"ctimeMs":1575555271007.733,"birthtimeMs":1575555111602.5095,"atime":"2019-12-05T14:14:31.007Z","mtime":"2019-12-05T14:14:31.008Z","ctime":"2019-12-05T14:14:31.008Z","birthtime":"2019-12-05T14:11:51.603Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:15:38,092 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/page/app/app.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544106,"size":411,"blocks":8,"atimeMs":1575555338028.9424,"mtimeMs":1575555338029.6013,"ctimeMs":1575555338029.6013,"birthtimeMs":1575555111612.5786,"atime":"2019-12-05T14:15:38.029Z","mtime":"2019-12-05T14:15:38.030Z","ctime":"2019-12-05T14:15:38.030Z","birthtime":"2019-12-05T14:11:51.613Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:15:39,256 INFO 95391 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public/manifest.json","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544082,"size":739,"blocks":8,"atimeMs":1575555205481.6409,"mtimeMs":1575555339178.6035,"ctimeMs":1575555339178.6035,"birthtimeMs":1575555111601.8152,"atime":"2019-12-05T14:13:25.482Z","mtime":"2019-12-05T14:15:39.179Z","ctime":"2019-12-05T14:15:39.179Z","birthtime":"2019-12-05T14:11:51.602Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:18:19,838 INFO 95595 [egg:logger] init all loggers with options: {"dir":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"my-blog-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-12-05 22:18:19,848 INFO 95595 [egg:core] dump config after load, 4ms
+2019-12-05 22:18:19,877 INFO 95595 [egg-watcher] Start watching: ["/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/mocks","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/mocks_proxy","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app.js","/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/build"]
+2019-12-05 22:18:19,877 INFO 95595 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app"
+2019-12-05 22:18:19,878 INFO 95595 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config"
+2019-12-05 22:18:19,878 INFO 95595 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/mocks"
+2019-12-05 22:18:19,878 INFO 95595 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/mocks_proxy"
+2019-12-05 22:18:19,878 INFO 95595 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app.js"
+2019-12-05 22:18:19,878 INFO 95595 [egg-watcher] Start watching: "/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/build"
+2019-12-05 22:18:19,878 INFO 95595 [egg-watcher:agent] watcher start success
+2019-12-05 22:18:19,896 INFO 95595 [egg:core] dump config after ready, 9ms
+2019-12-05 22:18:23,273 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public/manifest.json","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544082,"size":407,"blocks":8,"atimeMs":1575555205481.6409,"mtimeMs":1575555503028.5833,"ctimeMs":1575555503028.5833,"birthtimeMs":1575555111601.8152,"atime":"2019-12-05T14:13:25.482Z","mtime":"2019-12-05T14:18:23.029Z","ctime":"2019-12-05T14:18:23.029Z","birthtime":"2019-12-05T14:11:51.602Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:18:23,342 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/app.tpl.545574260","remove":true,"isDirectory":false,"isFile":false}
+2019-12-05 22:18:23,343 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/app.tpl.545574260","remove":true,"isDirectory":false,"isFile":false}
+2019-12-05 22:18:23,343 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/app.tpl","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300611613,"size":650,"blocks":8,"atimeMs":1575555503338.1572,"mtimeMs":1575555503092.9714,"ctimeMs":1575555503124.3298,"birthtimeMs":1575555503092.8777,"atime":"2019-12-05T14:18:23.338Z","mtime":"2019-12-05T14:18:23.093Z","ctime":"2019-12-05T14:18:23.124Z","birthtime":"2019-12-05T14:18:23.093Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:18:23,344 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/test.tpl.835350820","remove":true,"isDirectory":false,"isFile":false}
+2019-12-05 22:18:23,344 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/test.tpl","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300611614,"size":580,"blocks":8,"atimeMs":1575555503125.7932,"mtimeMs":1575555503125.8853,"ctimeMs":1575555503140.199,"birthtimeMs":1575555503125.7932,"atime":"2019-12-05T14:18:23.126Z","mtime":"2019-12-05T14:18:23.126Z","ctime":"2019-12-05T14:18:23.140Z","birthtime":"2019-12-05T14:18:23.126Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:18:44,036 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config/config.default.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544124,"size":398,"blocks":8,"atimeMs":1575555523974.4277,"mtimeMs":1575555523975.5144,"ctimeMs":1575555523975.5144,"birthtimeMs":1575555111621.7231,"atime":"2019-12-05T14:18:43.974Z","mtime":"2019-12-05T14:18:43.976Z","ctime":"2019-12-05T14:18:43.976Z","birthtime":"2019-12-05T14:11:51.622Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-05 22:44:04,136 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 902239ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-05 22:48:13,796 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 210351ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-05 22:51:23,237 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 149427ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-05 23:06:43,637 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 920397ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-06 00:38:09,980 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 5486305ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-06 02:26:16,728 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6486658ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-06 04:14:22,501 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6485584ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-06 06:02:29,824 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6487302ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-06 07:50:37,520 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6487670ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-06 09:38:44,034 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6486406ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-06 10:52:21,857 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 4417788ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-06 20:16:45,745 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 33863393ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-09 21:53:37,748 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 265011930ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-09 22:07:58,156 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 240530ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-09 22:09:42,925 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 64757ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-09 23:44:51,709 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 5708291ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-10 01:32:58,818 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6486837ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-10 03:21:04,838 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6485979ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-10 05:09:12,394 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6487511ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-10 06:57:18,758 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6486332ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-10 08:45:25,274 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6486477ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-10 10:10:41,136 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 5115805ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-10 21:37:29,121 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 41187946ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-10 21:42:12,297 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/page/app","remove":true,"isDirectory":true,"isFile":false}
+2019-12-10 21:42:36,119 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/test.tpl","remove":true,"isDirectory":false,"isFile":false}
+2019-12-10 21:42:46,723 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/view/layout.tpl","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544121,"size":388,"blocks":8,"atimeMs":1575985366710.8762,"mtimeMs":1575985366711.9663,"ctimeMs":1575985366711.9663,"birthtimeMs":1575555111619.808,"atime":"2019-12-10T13:42:46.711Z","mtime":"2019-12-10T13:42:46.712Z","ctime":"2019-12-10T13:42:46.712Z","birthtime":"2019-12-05T14:11:51.620Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-10 21:42:46,773 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/web/view/layout.tpl","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544121,"size":388,"blocks":8,"atimeMs":1575985366710.8762,"mtimeMs":1575985366711.9663,"ctimeMs":1575985366711.9663,"birthtimeMs":1575555111619.808,"atime":"2019-12-10T13:42:46.711Z","mtime":"2019-12-10T13:42:46.712Z","ctime":"2019-12-10T13:42:46.712Z","birthtime":"2019-12-05T14:11:51.620Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-10 21:42:47,307 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/public/manifest.json","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300544082,"size":407,"blocks":8,"atimeMs":1575555205481.6409,"mtimeMs":1575985367179.1697,"ctimeMs":1575985367179.1697,"birthtimeMs":1575555111601.8152,"atime":"2019-12-05T14:13:25.482Z","mtime":"2019-12-10T13:42:47.179Z","ctime":"2019-12-10T13:42:47.179Z","birthtime":"2019-12-05T14:11:51.602Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-10 21:42:47,309 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/app.tpl.2173579943","remove":true,"isDirectory":false,"isFile":false}
+2019-12-10 21:42:47,321 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/app.tpl.2173579943","remove":true,"isDirectory":false,"isFile":false}
+2019-12-10 21:42:47,321 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/app.tpl","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300614126,"size":599,"blocks":8,"atimeMs":1575985367259.5107,"mtimeMs":1575985367259.6858,"ctimeMs":1575985367276.2446,"birthtimeMs":1575985367259.5107,"atime":"2019-12-10T13:42:47.260Z","mtime":"2019-12-10T13:42:47.260Z","ctime":"2019-12-10T13:42:47.276Z","birthtime":"2019-12-10T13:42:47.260Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-10 21:42:47,322 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/test.tpl.3364794939","remove":true,"isDirectory":false,"isFile":false}
+2019-12-10 21:42:47,322 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/app/view/test.tpl","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":4300614127,"size":529,"blocks":8,"atimeMs":1575985367277.8276,"mtimeMs":1575985367277.9407,"ctimeMs":1575985367286.2964,"birthtimeMs":1575985367277.8276,"atime":"2019-12-10T13:42:47.278Z","mtime":"2019-12-10T13:42:47.278Z","ctime":"2019-12-10T13:42:47.286Z","birthtime":"2019-12-10T13:42:47.278Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-12-10 21:43:22,909 INFO 95595 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/config/config.test.js","remove":true,"isDirectory":false,"isFile":false}
+2019-12-10 23:28:39,654 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 5909910ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 01:16:46,707 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6486965ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 03:04:53,316 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6486557ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 04:53:01,370 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6488015ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 06:41:08,645 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6487240ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 08:29:19,644 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6470207ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 09:51:07,376 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 4907646ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 20:47:00,884 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 39293666ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 21:27:31,750 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 549392ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 21:33:31,282 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 259847ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 21:37:50,240 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 218942ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 21:41:47,989 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 217736ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 21:46:05,792 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 217966ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 21:50:24,797 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 218983ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 21:54:22,135 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 217327ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 22:02:57,992 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 217859ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 22:07:22,184 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 244181ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 22:09:44,152 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 101945ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 22:14:05,608 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 221434ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 22:16:51,324 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 145697ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-11 23:42:31,474 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 5099902ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-12 01:30:40,671 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6489060ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-12 03:18:48,421 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6487706ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-12 05:06:55,659 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6487168ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-12 06:55:05,926 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6490217ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-12 08:43:15,245 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 6489234ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-12 10:18:01,525 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 5686197ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-12 20:45:38,312 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 37656739ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
+2019-12-12 21:06:45,166 ERROR 95595 nodejs.ClusterClientNoResponseError: client no response in 1167883ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhubinbin/zhubinbin-workfile/my-workspace/my-blog/node_modules/_cluster-client@3.0.1@cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 95595
+hostname: zhubinbindeMBP.lan
+
